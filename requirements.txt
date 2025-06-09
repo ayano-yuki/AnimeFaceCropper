@@ -1,0 +1,7 @@
+# 顔検出
+facexlib
+opencv-python
+
+# 超解像（Real-ESRGAN + 依存）
+realesrgan
+basicsr==1.4.2
