@@ -7,6 +7,21 @@ Docker 上で動作し、GPU 不要・CPU 環境で実行可能です。
 - 顔部分を切り出して `output/` フォルダに保存
 - オプションで Real-ESRGAN による超解像を適用（初期値は無効）
 
+## フォルダ構成
+```sh
+./
+├── app/
+│ ├── main.py
+│ ├── detect_faces.py
+│ ├── super_resolve.py
+│ └── utils.py
+├── input/              # 顔検出対象となる画像 .jpg .jpeg .png .webp .bmp
+├── output/             # 出力される顔画像(フォルダーは実行時から必須) .png
+├── requirements.txt
+├── Dockerfile
+└── README.md
+```
+
 ## 実行方法（Windows + Docker）
 1. イメージをビルド
     ```powershell   
