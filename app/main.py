@@ -4,8 +4,8 @@ from PIL import Image
 from face_detect import detect_faces
 from super_resolve import upscale_image
 
-INPUT_DIR = "../input/"
-OUTPUT_DIR = "../output/"
+INPUT_DIR = '/app/input'
+OUTPUT_DIR = '/app/output'
 TARGET_SIZE = 512
 VALID_EXTENSIONS = [".jpg", ".jpeg", ".png", ".webp", ".bmp"]
 

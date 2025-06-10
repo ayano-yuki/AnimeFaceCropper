@@ -31,18 +31,11 @@ Docker 上で動作し、GPU 不要・CPU 環境で実行可能です。
     input/ フォルダに .jpg, .png などの画像を入れます。
 1. コンテナを実行
     ```powershell
-    docker run --rm ^
-    -v "${PWD}\input:/app/input" ^
-    -v "${PWD}\output:/app/output" ^
-    anime-face-up
+    docker run --rm -v "${PWD}\input:/app/input" -v "${PWD}\output:/app/output" anime-face-up
     ```
 
     超解像オプションは通常時は無効化されています。
     超解像を有効にしたい場合、環境変数 UPSCALE=true を指定してください。
     ```powershell
-    docker run --rm ^
-    -v "${PWD}\input:/app/input" ^
-    -v "${PWD}\output:/app/output" ^
-    -e UPSCALE=true ^
-    anime-face-up
+    docker run --rm -v "${PWD}\input:/app/input" -v "${PWD}\output:/app/output" -e UPSCALE=true anime-face-up
    ```
