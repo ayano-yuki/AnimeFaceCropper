@@ -1,9 +1,0 @@
-# 顔検出
-facexlib
-opencv-python
-
-# 超解像（Real-ESRGAN + 依存）
-realesrgan
-mtcnn
-basicsr==1.4.2
-git+https://github.com/xinntao/Real-ESRGAN.git
